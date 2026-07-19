@@ -1,3 +1,4 @@
+// Production build seed script for Supabase Auth and Profiles table
 import * as fs from 'fs';
 import * as path from 'path';
 import { createClient } from '@supabase/supabase-js';
