@@ -1,0 +1,108 @@
+Here is a completely generic, reusable version of the prompt. All specific personal names, projects, companies, and locations have been replaced with generic placeholders (like `[Developer Name]`) so you can use this template for anyone or customize it however you like.
+
+---
+
+## The Reusable Portfolio Design Prompt
+
+> **Prompt:**
+> A high-resolution, pixel-perfect UI/UX design of a modern, dark-themed personal portfolio website for a software engineer. The design features a continuous, vertically scrolling landing page with a deep space blue (`#0B0F19`) and dark navy background, accented with vibrant neon pink (`#FF007F`) and electric cyan/teal (`#00F2FE`) highlights. The layout is clean, structured, and highly scannable, utilizing modern sans-serif typography paired with monospaced fonts for code snippets.
+> ### **Layout & Section Structure (from top to bottom):**
+> 
+> 
+> * **1. Navigation Header:**
+> * **Left:** A clean, minimal white text logo showing `[Developer Name]`.
+> * **Right:** Horizontal navigation links: "ABOUT", "EXPERIENCE", "SKILLS", "EDUCATION", and "PROJECTS" in a small, crisp, uppercase white font.
+> 
+> 
+> * **2. Hero Section (Split Layout):**
+> * **Left Column:** A large, bold typography heading: "Hello, This is **[Developer Name]**, I am a Professional **[Job Title 1] & [Job Title 2]**". The developer's name is highlighted in neon pink, and the job titles feature an electric cyan-to-teal gradient. Below this, include minimal social media icons and two pill-shaped action buttons: a dark button with a white border and a solid neon pink button.
+> * **Right Column:** A sleek, dark-themed code editor window with colorful syntax highlighting (orange, yellow, cyan, and purple text) showing a structured code snippet (such as a JSON object or JavaScript class) defining the developer's core attributes, skills, and a logical boolean function.
+> 
+> 
+> * **3. "About Me" Section (Split Layout):**
+> * **Left:** An "ABOUT ME" header followed by a clean, readable paragraph of text introducing the developer's background, core tech stack, and engineering philosophy.
+> * **Right:** A stylish, vertically-oriented black-and-white portrait of the developer, framed next to a decorative vertical text label rotated 90 degrees that reads "ABOUT ME" in a muted purple font.
+> 
+> 
+> * **4. "Experiences" Section (Split Layout):**
+> * **Left:** A vibrant, isometric 3D illustration of a dark purple and pink laptop displaying lines of code, with a mug/cup sitting next to it.
+> * **Right:** A vertical stack of sleek, dark cards representing professional experience and internships. Each card features a minimal purple category icon, the job title in bold white text, the company name, and a clean date-range tag (e.g., "Month Year – Present") aligned to the right.
+> 
+> 
+> * **5. "Skills" Section:**
+> * A centered section header reading "Skills". Below it, a clean, horizontal grid of dark, rounded square tiles. Each tile contains a colorful, minimal programming language or tool logo with its name written neatly below it.
+> 
+> 
+> * **6. "Projects" Section:**
+> * A vertical list of card-based project showcases.
+> * Each project is presented inside a container designed to look like a realistic, dark-themed code editor window, complete with window controls (red, yellow, green close/minimize/maximize dots in the top-left corner) and a file tab displaying the project's name (e.g., `[Project Name]`).
+> * Inside each window is a syntax-highlighted code block formatting the project's technical details as an object (containing keys like `name`, `tools` as an array, `myRole`, and a multi-line `Description`).
+> 
+> 
+> * **7. "Education" Section (Split Layout):**
+> * **Left:** A detailed isometric illustration of a digital workspace (an open laptop with floating UI elements, charts, and notification badges in pink and blue).
+> * **Right:** A vertical stack of three clean timeline cards detailing educational history (e.g., Degree/Certification, Institution, and Year ranges).
+> 
+> 
+> * **8. "Contact" Section (Split Layout):**
+> * **Left Column:** A modern, glassmorphic contact form titled "CONTACT WITH ME" with three clean, dark input fields ("Your Name", "Your Email", "Your Message") and a wide, solid neon pink button at the bottom labeled "SEND MESSAGE".
+> * **Right Column:** Compact, neatly aligned contact details including email, phone number, and location accompanied by subtle icons, bordered on the far right by a vertical text tab reading "CONTACT".
+> 
+> 
+> * **9. Footer:**
+> * A simple, low-contrast footer.
+> * **Left:** "© Developer Portfolio by [Developer Name]".
+> * **Right:** Action links for "★ STAR" and "⑂ FORK" alongside a small, circular neon pink "Scroll to Top" arrow button.
+> 
+> 
+> 
+> 
+> ### **Aesthetic & Styling Guidelines:**
+> 
+> 
+> * **Color Palette:** Primary Background is `#0B0F19` (very dark space blue). Cards and containers are `#111625` (slightly lighter navy). Key accent colors are `#FF007F` (neon pink) and `#00F2FE` (cyan/teal).
+> * **Atmosphere:** Deep, glowing, and futuristic. Use subtle, dark purple and blue radial glows/gradients behind the layout sections to create depth.
+> * **Visuals:** Isometric vector illustrations, code syntax highlighting, clean margins, and consistent padding throughout.
+> 
+>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Create a professional project plan for a personal portfolio website built using the MERN Stack.
+
+Include:
+
+- Project overview
+- Pages
+- Website sections
+- Features
+- Database design
+- Authentication flow
+- Dashboard features
+- Deployment plan
+
+Keep it professional and beginner friendly.
+
+
+
+
+
+
+
+Format the project plan in a professional report style.

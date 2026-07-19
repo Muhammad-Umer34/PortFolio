@@ -1,0 +1,445 @@
+# **Personal Portfolio Website (MERN Stack)**
+
+## **Project Plan Report**
+
+---
+
+# 1. Project Overview
+
+## Introduction
+
+The **Personal Portfolio Website** is a full-stack web application developed using the **MERN Stack (MongoDB, Express.js, React.js, and Node.js)**. The project aims to create a modern, responsive, and professional platform for showcasing personal information, technical skills, projects, certifications, education, and contact details.
+
+In addition to providing an engaging experience for visitors, the application includes a secure **Admin Dashboard** that allows the portfolio owner to manage website content without modifying the source code. The dashboard enables authenticated users to update portfolio information, manage projects, upload certificates, and review messages submitted through the contact form.
+
+This project demonstrates practical knowledge of modern web development, RESTful APIs, database management, authentication, and deployment using cloud platforms.
+
+---
+
+# 2. Project Objectives
+
+The primary objectives of this project are:
+
+* Develop a responsive and user-friendly portfolio website.
+* Showcase personal information, technical skills, and completed projects.
+* Allow visitors to contact the portfolio owner through a contact form.
+* Implement secure authentication for administrative access.
+* Provide a dashboard for managing website content dynamically.
+* Deploy the application using modern cloud hosting platforms.
+
+---
+
+# 3. Technology Stack
+
+| Component       | Technology                                  |
+| --------------- | ------------------------------------------- |
+| Frontend        | React.js, React Router, Tailwind CSS, Axios |
+| Backend         | Node.js, Express.js                         |
+| Database        | MongoDB Atlas, Mongoose                     |
+| Authentication  | JSON Web Token (JWT), bcrypt.js             |
+| Deployment      | Vercel, Render, MongoDB Atlas               |
+| Version Control | Git & GitHub                                |
+
+---
+
+# 4. Website Pages
+
+The portfolio website will consist of the following pages.
+
+## 4.1 Home Page
+
+The landing page introduces the portfolio owner and provides quick access to important information.
+
+**Contents**
+
+* Hero Banner
+* Professional Introduction
+* Resume Download Button
+* Call-to-Action Buttons
+* Social Media Links
+
+---
+
+## 4.2 About Page
+
+Provides detailed information about the portfolio owner.
+
+**Contents**
+
+* Biography
+* Education
+* Experience
+* Career Goals
+* Personal Interests
+
+---
+
+## 4.3 Skills Page
+
+Displays technical and professional skills.
+
+Each skill includes:
+
+* Skill Name
+* Category
+* Proficiency Level
+* Skill Icon
+
+---
+
+## 4.4 Projects Page
+
+Displays completed academic and personal projects.
+
+Each project contains:
+
+* Project Title
+* Description
+* Technology Stack
+* GitHub Repository
+* Live Demo
+* Project Image
+* Category
+
+---
+
+## 4.5 Certificates Page
+
+Displays certifications earned during learning and professional development.
+
+Each certificate includes:
+
+* Certificate Name
+* Issuing Organization
+* Issue Date
+* Certificate Image
+* Verification Link
+
+---
+
+## 4.6 Contact Page
+
+Allows visitors to communicate directly with the portfolio owner.
+
+**Contact Form Fields**
+
+* Full Name
+* Email Address
+* Subject
+* Message
+
+---
+
+## 4.7 Login Page
+
+Provides secure administrator authentication.
+
+Features include:
+
+* Email
+* Password
+* Remember Me Option
+* Login Button
+
+---
+
+## 4.8 Admin Dashboard
+
+Accessible only after successful authentication and used to manage all portfolio content.
+
+---
+
+# 5. Website Sections
+
+The Home Page will be divided into the following sections.
+
+## Hero Section
+
+* Profile Picture
+* Name
+* Professional Title
+* Short Introduction
+* Resume Download
+* Social Links
+
+## About Section
+
+* Personal Summary
+* Educational Background
+* Career Objective
+
+## Skills Section
+
+* Technical Skills
+* Programming Languages
+* Frameworks
+* Databases
+* Tools
+
+## Projects Section
+
+* Featured Projects
+* Project Cards
+* GitHub Links
+* Live Demonstrations
+
+## Certificates Section
+
+* Certificate Gallery
+* Verification Links
+
+## Contact Section
+
+* Contact Form
+* Email Information
+* Social Platforms
+
+## Footer
+
+* Copyright
+* Navigation Links
+* Contact Information
+* Social Media Icons
+
+---
+
+# 6. Functional Features
+
+## Visitor Features
+
+Visitors can:
+
+* Browse portfolio information
+* View projects
+* Explore technical skills
+* Download resume
+* View certificates
+* Submit contact messages
+* Navigate using a responsive interface
+* Access the website from desktop, tablet, or mobile devices
+
+---
+
+## Administrator Features
+
+The administrator can:
+
+* Log in securely
+* Add new projects
+* Update project information
+* Delete projects
+* Manage skills
+* Upload certificates
+* Update personal information
+* Read contact messages
+* Log out securely
+
+---
+
+# 7. Database Design
+
+The application will use MongoDB as the primary database.
+
+## Users Collection
+
+| Field    | Data Type       |
+| -------- | --------------- |
+| _id      | ObjectId        |
+| name     | String          |
+| email    | String          |
+| password | String (Hashed) |
+| role     | String          |
+
+---
+
+## Projects Collection
+
+| Field        | Data Type |
+| ------------ | --------- |
+| title        | String    |
+| description  | String    |
+| technologies | Array     |
+| githubLink   | String    |
+| liveLink     | String    |
+| image        | String    |
+| category     | String    |
+| createdAt    | Date      |
+
+---
+
+## Skills Collection
+
+| Field    | Data Type |
+| -------- | --------- |
+| name     | String    |
+| category | String    |
+| level    | Number    |
+| icon     | String    |
+
+---
+
+## Certificates Collection
+
+| Field            | Data Type |
+| ---------------- | --------- |
+| title            | String    |
+| organization     | String    |
+| issueDate        | Date      |
+| image            | String    |
+| verificationLink | String    |
+
+---
+
+## Contact Messages Collection
+
+| Field     | Data Type |
+| --------- | --------- |
+| name      | String    |
+| email     | String    |
+| subject   | String    |
+| message   | String    |
+| createdAt | Date      |
+
+---
+
+# 8. Authentication Flow
+
+The application follows a secure authentication mechanism based on **JWT (JSON Web Token)**.
+
+### Workflow
+
+1. Administrator visits the Login Page.
+2. Administrator enters email and password.
+3. Backend validates the submitted credentials.
+4. Password is verified using **bcrypt.js**.
+5. A JWT token is generated after successful authentication.
+6. The token is stored on the client side (e.g., HTTP-only cookie or local storage).
+7. Protected routes verify the token before granting access.
+8. Authenticated users can access the Admin Dashboard.
+9. Users can securely log out, ending the authenticated session.
+
+---
+
+# 9. Dashboard Features
+
+The Admin Dashboard provides complete content management functionality.
+
+## Dashboard Overview
+
+* Total Projects
+* Total Skills
+* Total Certificates
+* Total Contact Messages
+
+### Project Management
+
+* Add Project
+* Edit Project
+* Delete Project
+
+### Skills Management
+
+* Add Skill
+* Edit Skill
+* Delete Skill
+
+### Certificate Management
+
+* Upload Certificate
+* Update Certificate
+* Delete Certificate
+
+### About Section Management
+
+* Update Biography
+* Update Education
+* Update Experience
+* Update Resume Link
+
+### Contact Management
+
+* View Contact Messages
+* Read Message Details
+* Delete Messages (Optional)
+
+### Account Settings
+
+* Change Password
+* Update Email
+* Logout
+
+---
+
+# 10. Deployment Plan
+
+The project will be deployed using cloud hosting services.
+
+## Frontend Deployment
+
+* Build the React application.
+* Deploy using **Vercel**.
+* Configure production environment variables.
+
+---
+
+## Backend Deployment
+
+* Deploy the Express.js server using **Render**.
+* Configure environment variables:
+
+  * MongoDB URI
+  * JWT Secret
+  * Client URL
+  * Port Number
+
+---
+
+## Database Deployment
+
+* Host the database using **MongoDB Atlas**.
+* Configure database users and network access.
+* Connect the backend API securely.
+
+---
+
+## Environment Variables
+
+### Frontend
+
+```env
+VITE_API_URL=https://your-backend-url
+```
+
+### Backend
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secure_secret_key
+CLIENT_URL=https://your-frontend-url
+```
+
+---
+
+# 11. Development Workflow
+
+The project will follow the sequence below:
+
+1. Project Planning
+2. UI/UX Design
+3. Frontend Development
+4. Backend Development
+5. Database Integration
+6. Authentication Implementation
+7. Admin Dashboard Development
+8. Testing and Bug Fixing
+9. Deployment
+10. Final Review and Documentation
+
+---
+
+# 12. Expected Outcome
+
+Upon completion, the project will deliver a fully functional and professionally designed portfolio website featuring a responsive user interface, secure administrator authentication, dynamic content management, and cloud deployment.
+
+The application will demonstrate proficiency in full-stack web development using the MERN Stack while showcasing practical skills in frontend development, backend API creation, database management, authentication, and deployment. The completed portfolio will serve as a professional online presence and a valuable addition to a software development portfolio.
