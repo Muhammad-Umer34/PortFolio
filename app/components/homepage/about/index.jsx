@@ -27,7 +27,7 @@ function AboutSection() {
             src={personalData.profile}
             width={350}
             height={300}
-            alt="Muhammad Umer"
+            alt="Muhammad Umer - Full Stack Developer & Machine Learning Engineer"
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer object-cover object-top"
           />
         </div>
