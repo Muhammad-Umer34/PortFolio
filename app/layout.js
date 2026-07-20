@@ -12,7 +12,7 @@ const inter = Inter({
   display: 'swap',
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://muhammad-umer.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://muhammad-umer-portfolio-phi.vercel.app';
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
